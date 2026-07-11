@@ -1,0 +1,18 @@
+-- functions are the block of statements which is used to perform certain task
+-- it is used for code reusability
+-- code duplicacy is removed
+-- make your code divided into smaller section
+
+-- inbuilt function
+-- scaler function = applies on ever row and return the output for every row
+-- string numbers date 
+
+use world;
+select name, continent, concat(name,continent) as col3 from country;
+select now(), adddate(now(),interval 1 week);
+select name, continent, concat(name,' is present in ',continent) from country;
+select length(name), char_length(name) from country;
+select name, capital, replace('asia pacific','asia','north') from country where continent='asia';
+select trim('  hi harry'  );
+select substr('combodia', -4,2);
+select curdate();
