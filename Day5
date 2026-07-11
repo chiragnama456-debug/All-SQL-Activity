@@ -1,0 +1,8 @@
+select round(751.00,-2);
+select round(501.00,-3);
+select round(6.00,-1);
+select round(596,-4);
+select truncate(751.00,-2);
+select floor(751.00);
+select ceil(751.05);
+select mod(3,5);
