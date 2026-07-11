@@ -1,0 +1,17 @@
+show databases;
+use world;
+describe country; -- table main konse columns hai 
+select * from country; -- data access
+select name, continent from country;
+select name, continent, population, population+500 as 'newpopulation' from country;
+select name, continent from country where continent= 'Europe' and indepyear>1900;
+select * from country;
+select code, name from country where surfacearea>1900;
+select code, name from country where region='southern europe';
+select * from country;
+select code, name from country where continent='africa' and region='central africa';
+select Name, continent, population from country where continent='asia'or continent='africa';
+select name,population, region, population+(population*10)/100 as new_population from country where indepyear>1950;
+select name,localname from country where name=localname;
+
+
