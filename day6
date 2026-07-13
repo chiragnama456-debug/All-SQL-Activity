@@ -1,0 +1,28 @@
+use world;
+select distinct(continent) from country; -- it will give all unique value, applied on multiple row
+select distinct(name) from country; --continent collapse kr de ta hai
+select count(continent) from country;
+select count(continent),count(distinct(continent)) from country;
+select count(name), count(distinct(name)) from country;  
+-- aggregate function are the function which are used to apply the calculation on set of rows
+select sum(population), count(population), avg(population) from country;
+select max(surfacearea), count(surfacearea) from country;
+select max(continent), count(continent), min(continent) from country;
+-- non aggregated column aur count valaa aggregated func
+select population, count(population) from country;
+
+-- data sorting (order by clause)
+-- in each region we sorted a data based on continent then population in descendig order
+select name,  continent, region, population from country 
+order by continent, population desc;
+
+
+
+
+
+
+
+
+
+
+
