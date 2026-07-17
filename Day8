@@ -1,0 +1,5 @@
+use world;
+select * from country;
+select continent, count(*) from country group by continent having count(*)>30;
+select count(name),indepyear from country group by indepyear having count(name)>10;
+
